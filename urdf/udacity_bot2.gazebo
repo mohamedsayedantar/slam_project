@@ -11,7 +11,7 @@
       <wheelSeparation>0.2</wheelSeparation>
       <wheelDiameter>0.1</wheelDiameter>
       <torque>10</torque>
-      <commandTopic>cmd_vel</commandTopic>
+      <commandTopic>/teleop/cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>robot_footprint</robotBaseFrame>
@@ -42,7 +42,7 @@
         </camera>
              <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
              <alwaysOn>true</alwaysOn>
-                <updateRate>1</updateRate>
+                <updateRate>10</updateRate>
                 <cameraName>camera</cameraName>
                 <frameName>camera_rgbd_frame</frameName>                   
             <imageTopicName>rgb/image_raw</imageTopicName>
@@ -107,7 +107,7 @@
     <sensor type="ray" name="back_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>false</visualize>
-      <update_rate>20</update_rate>
+      <update_rate>40</update_rate>
       <ray>
         <scan>
           <horizontal>
