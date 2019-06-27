@@ -74,16 +74,52 @@ eventually by creating a package named slam-project this package contain the fol
 5.  config folder
     
     
+the worlds folder contain the different (.world) files for the environments.
+
+the launch folder contain the launch files.
+
+the urdf folder which contain the robot xacoro file and the gazebo file.
+
+the meshes contain the (.dae) files for any robot sensor or device.
+
+the config folder contain any required configuration files.
+
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/connections.png)
 
 
 
+## Results
+in this section the output maps in shown as 2D maps and 3D maps.
 
+### 2D Maps
+for the 2D maps for both the given environment and the new environment.
 
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/2D-1.png)
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/2D-2.png)
 
+### 3D maps
+for the 3D maps for both the given environment and the new environment.
 
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/3D-1.png)
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/3D-2.png)
 
+### RViz
+for RViz output for both the given environment and the new environment.
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/rviz1.png)
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/rviz2.png)
 
+### Database Analysis
+The rtabmap-databaseViewer is a great tool for exploring your database when you are done generating it. It is isolated from ROS and allows for complete analysis of your mapping session.
+This is how you will check for loop closures, generate 3D maps for viewing, extract images, check feature mapping rich zones, and more.
 
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/db1.png)
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/db2.png)
+
+## Discussion
+As the robots camera in a low height from the ground this lead the robot for weak discovering the far areas around him it need to be near to any thing on the floor to identify it's color and so on and this is not good, so the camera should be a little higher from the ground for better discovering the around areas, so the ground of the 3D map is not recognized well even the robot was near to this ground part. another bad thing is the accuracy of the robot sensors, even these errors is small but after moving around the room or the specific place several times this small error increase with time too so after several minutes the total error is big and this is very bad thing, for this reason as the robot go through the same place again it will build another map this map in not on the same position of the previous one with respect to the robot poses, reducing the error of the measuring sensors will reduce the error but not as expecting, as increasing the moved distances accumulate the error to eventually affect the total map.
+
+## Future Work
+putting the camera in a suitable place on the robot to be in a proper distance from the ground is very important to make it easy for the robot to discover the around world clearly.
 
 
 
