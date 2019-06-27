@@ -100,7 +100,7 @@ for the 2D maps for both the given environment and the new environment.
 ### 3D maps
 for the 3D maps for both the given environment and the new environment.
 
-![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/3D-1.png)
+![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/3D-1.jpg)
 ![robot1](https://github.com/mohamedsayedantar/slam_project/blob/master/images/3D-2.png)
 
 ### RViz
@@ -122,7 +122,8 @@ As the robots camera in a low height from the ground this lead the robot for wea
 putting the camera in a suitable place on the robot to be in a proper distance from the ground is very important to make it easy for the robot to discover the around world clearly.
 
 
-
+Note: the database file on drive due to large size at
+https://drive.google.com/open?id=18r_6Nw21CS5Sx19cx60CGU-nRatkq0B9
 
 
 
