@@ -67,11 +67,11 @@ using the robot from localization project without any changes, this robot has a 
 
 eventually by creating a package named slam-project this package contain the following main folders: 
 
-. worlds folder
-. launch folder
-. urdf folder
-. meshes folder
-. config folder
+1.  worlds folder
+2.  launch folder
+3.  urdf folder
+4.  meshes folder
+5.  config folder
     
     
 
